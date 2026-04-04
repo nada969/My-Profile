@@ -80,7 +80,7 @@
   --foreground: 210 40% 98%;
   --border: 215 28% 17%;
   --input: 215 28% 17%;
-  --ring: 175 100% 38%; /* Electric Teal */
+  --ring: 346 87% 60%; /* Electric Teal */
   
   --card: 222 47% 10%;
   --card-foreground: 210 40% 98%;
@@ -90,7 +90,7 @@
   --popover-foreground: 210 40% 98%;
   --popover-border: 215 28% 17%;
   
-  --primary: 175 100% 38%; /* Electric Teal */
+  --primary: 346 87% 60%; /* Electric Teal */
   --primary-foreground: 222 47% 11%;
   
   --secondary: 217 33% 17%;
@@ -114,7 +114,7 @@
   --sidebar: 222 47% 10%;
   --sidebar-foreground: 210 40% 98%;
   --sidebar-border: 215 28% 17%;
-  --sidebar-primary: 175 100% 38%;
+  --sidebar-primary: 346 87% 60%;
   --sidebar-primary-foreground: 222 47% 11%;
   --sidebar-accent: 217 33% 17%;
   --sidebar-accent-foreground: 210 40% 98%;
