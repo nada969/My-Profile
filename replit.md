@@ -4,6 +4,10 @@
 
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
 
+## Artifacts
+
+- **portfolio** (`artifacts/portfolio`) — Nada Yahya's personal portfolio website. React + Vite, no backend. Single-page scrollable layout with hero, experience, projects, skills, education, and contact sections. Dark midnight theme with electric teal accents. Deployed at `/`.
+
 ## Stack
 
 - **Monorepo tool**: pnpm workspaces

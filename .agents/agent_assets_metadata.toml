@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "vA2czLXHXmOoHhk8kqILA"
+uri = "file://artifacts/portfolio/src/assets/images/profile.png"
+type = "image"
+title = "Professional software engineer portrait"
+
+[[generated]]
+id = "-F5nLEv1_s67-YWt0QFar"
+uri = "file://artifacts/portfolio/src/assets/images/hero-bg.png"
+type = "image"
+title = "Abstract circuit board background"
