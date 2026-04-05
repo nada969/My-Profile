@@ -50,10 +50,33 @@ function TypewriterText({ lines }: { lines: string[] }) {
 }
 
 const stats = [
-  { value: "6+", label: "Projects built on own time", icon: <Code2 className="w-5 h-5" /> },
-  { value: "3+", label: "Stacks learned independently", icon: <Lightbulb className="w-5 h-5" /> },
+  { value: "8+", label: "Projects built on own time", icon: <Code2 className="w-5 h-5" /> },
+  { value: "4+", label: "Stacks learned independently", icon: <Lightbulb className="w-5 h-5" /> },
   { value: "1", label: "Published research paper", icon: <BookOpen className="w-5 h-5" /> },
   { value: "1st", label: "National EV competition", icon: <Award className="w-5 h-5" /> },
+];
+
+const skillCategories = [
+  {
+    label: "Languages",
+    icon: <Code2 className="w-4 h-4" />,
+    skills: ["Java", "Python", "TypeScript", "C#", "MATLAB / C", "PLC"],
+  },
+  {
+    label: "Frameworks & Libraries",
+    icon: <Globe className="w-4 h-4" />,
+    skills: ["Django", "ASP.NET", "React.js", "Node.js", "Bootstrap"],
+  },
+  {
+    label: "Databases",
+    icon: <Database className="w-4 h-4" />,
+    skills: ["PostgreSQL / PostGIS", "MySQL", "SQL Server", "MongoDB", "Redis"],
+  },
+  {
+    label: "Tools & Practices",
+    icon: <Zap className="w-4 h-4" />,
+    skills: ["RESTful APIs", "JWT", "Git / GitHub", "Linux (Ubuntu)", "Postman", "ORM", "Agile", "CI/CD basics", "OOP", "SOLID Principles", "Design Patterns"],
+  },
 ];
 
 const techStack = [
@@ -65,19 +88,39 @@ const techStack = [
   { icon: <SiMongodb className="w-5 h-5" />, name: "MongoDB", level: "Proficient", color: "text-green-400" },
   { icon: <SiLinux className="w-5 h-5" />, name: "Linux", level: "Proficient", color: "text-yellow-300" },
   { icon: <SiCplusplus className="w-5 h-5" />, name: "C / C#", level: "Proficient", color: "text-blue-500" },
+  { icon: <Globe className="w-5 h-5" />, name: "TypeScript", level: "Proficient", color: "text-blue-300" },
+  { icon: <Globe className="w-5 h-5" />, name: "ASP.NET", level: "Learning", color: "text-purple-400" },
+  { icon: <Globe className="w-5 h-5" />, name: "Node.js", level: "Learning", color: "text-green-300" },
+  { icon: <Database className="w-5 h-5" />, name: "Redis", level: "Proficient", color: "text-red-400" },
 ];
 
 const projects = [
   {
+    title: "OrderX",
+    summary: "Currently building the backend for a dual-sided SaaS platform — an e-commerce storefront builder for vendors AND a B2B wholesale marketplace. Also contributing to frontend and marketing features.",
+    tech: ["TypeScript", "PostgreSQL", "JSON"],
+    icon: <Globe className="w-6 h-6" />,
+    highlight: true,
+    tag: "In Active Development",
+    status: "live",
+  },
+  {
+    title: "Fuel-Optimized Route API",
+    summary: "REST API that integrates with OpenRouteService to split US road trips into ≤500-mile segments, select the cheapest fuel stop per segment, and return total trip cost in a single call.",
+    tech: ["Python", "Django", "MySQL", "RESTful API", "JWT"],
+    icon: <Zap className="w-6 h-6" />,
+    highlight: false,
+  },
+  {
     title: "Data Migration Tool",
-    summary: "Built independently to solve a real problem — reliable sync between MongoDB and PostgreSQL with cron, batching, and error recovery.",
-    tech: ["Java", "MongoDB", "PostgreSQL", "Cron"],
+    summary: "Syncs data between MongoDB (source) and PostgreSQL (destination) using JSON mappings, cron scheduling, batch processing, and full error handling.",
+    tech: ["Java", "MongoDB", "PostgreSQL", "Cron", "JSON"],
     icon: <Database className="w-6 h-6" />,
     highlight: false,
   },
   {
     title: "E-Commerce API — Artiqo",
-    summary: "Designed and built a full RESTful backend with JWT auth, product CRUD, cart, and order flow. Learned Django in depth to make it happen.",
+    summary: "Designed and built a full RESTful backend with JWT auth, product CRUD, cart, and order processing — focused on backend efficiency and data security.",
     tech: ["Python", "Django", "MySQL", "JWT"],
     icon: <Globe className="w-6 h-6" />,
     highlight: true,
@@ -85,21 +128,21 @@ const projects = [
   },
   {
     title: "Payment Application",
-    summary: "Implemented SALE, REFUND, Pre-Authorization, and VOID using software design patterns — all in C, from scratch.",
+    summary: "Simulated card, ATM terminal, and server interactions — implementing SALE, REFUND, Pre-Authorization, and VOID using C and software design patterns.",
     tech: ["C Language", "Design Patterns"],
     icon: <Code2 className="w-6 h-6" />,
     highlight: false,
   },
   {
-    title: "Traffic Light System",
-    summary: "Real-time embedded system for pedestrian-triggered traffic control using AVR ATmega32 and Proteus simulation.",
-    tech: ["C", "Embedded", "ATmega32"],
+    title: "On-Demand Traffic Light System",
+    summary: "Real-time traffic light system with pedestrian crosswalk integration using AVR ATmega32. Programmed in C, tested in Proteus simulation.",
+    tech: ["C", "Embedded", "ATmega32", "Proteus"],
     icon: <Cpu className="w-6 h-6" />,
     highlight: false,
   },
   {
     title: "EV Prototype — DU Racing",
-    summary: "Led embedded software and control architecture for the university EV team. Won 1st place nationally. Also built the team website.",
+    summary: "Led embedded software and control system development for the university EV team's electrical architecture. Also developed the team website. Won 1st place at EVER Egypt 2021.",
     tech: ["Embedded", "Control Systems", "Web"],
     icon: <Zap className="w-6 h-6" />,
     highlight: true,
@@ -107,7 +150,7 @@ const projects = [
   },
   {
     title: "Published Research Paper",
-    summary: "Co-authored and published an optimization study for MMC-based HVDC grids at MEPCON 2023 — a top power systems conference.",
+    summary: "\"Optimized Control of Modular Multilevel VSC-HVDC for Offshore Wind Farm Integration\" — advanced control strategies for MMC-based HVDC systems. Published at MEPCON 2023.",
     tech: ["Control Theory", "MATLAB", "HVDC"],
     icon: <BookOpen className="w-6 h-6" />,
     highlight: false,
@@ -116,13 +159,13 @@ const projects = [
 
 const timeline = [
   { year: "2018", event: "Started Electrical Engineering at Damietta University", type: "edu" },
-  { year: "2019", event: "Learned web dev independently — JavaScript, HTML, CSS, Bootstrap", type: "self" },
-  { year: "2021", event: "Led EV software team → Won EVER Egypt national competition", type: "win" },
-  { year: "2022", event: "Interned at Banque Misr as Software Developer — Angular + REST APIs", type: "work" },
-  { year: "2023", event: "Graduated + published research paper at MEPCON international conference", type: "edu" },
-  { year: "2023", event: "Joined Elsewedy Engineering as Tendering Engineer", type: "work" },
-  { year: "2024", event: "Enrolled in ALX Software Engineering Diploma — by choice, while working full-time", type: "self" },
-  { year: "2025", event: "Completed ALX · Actively building projects · Open to software roles", type: "now" },
+  { year: "2019", event: "Completed Web Development Diploma at Let's Know Training Center — JavaScript (ES6), TypeScript, HTML5, CSS3, Bootstrap, Sass, Responsive Design, CI/CD basics", type: "self" },
+  { year: "2021", event: "Led EV embedded software team → Won 1st place at EVER Egypt national EV competition", type: "win" },
+  { year: "2022", event: "Software Developer Intern at Banque Misr — Angular, TypeScript, REST APIs. Built and launched an e-commerce web app.", type: "work" },
+  { year: "2023", event: "Graduated B.Eng. + published research paper at MEPCON international conference", type: "edu" },
+  { year: "2023", event: "Joined Elsewedy Engineering as Electrical Tendering Engineer — SAP, Odoo, automation & infrastructure projects", type: "work" },
+  { year: "2024", event: "Enrolled in ALX Africa Software Engineering Diploma — by choice, while working full-time. Python, Django, Databases, RESTful APIs, Linux.", type: "self" },
+  { year: "2025", event: "Completed ALX · Building OrderX SaaS + more · Actively seeking software engineering roles", type: "now" },
 ];
 
 const typeLines = [
@@ -131,7 +174,7 @@ const typeLines = [
   "$ cat passion.txt",
   "→ building software while the world sleeps.",
   "$ git log --oneline",
-  "→ 6 personal projects. 1 published paper.",
+  "→ 8+ projects. 1 paper. always shipping.",
   "→ never stopped learning.",
 ];
 
@@ -290,19 +333,37 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeIn} className="mb-14">
             <p className="font-mono text-primary text-xs mb-3 uppercase tracking-widest">Capabilities</p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight">What I Work With</h2>
-            <p className="text-muted-foreground mt-4 max-w-lg">Marked what I'm still actively growing in — because I think that matters more than pretending everything is "expert level".</p>
+            <p className="text-muted-foreground mt-4 max-w-lg">Picked up across formal education, evening courses, and late-night project builds. Full list, no fluff.</p>
           </motion.div>
 
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-12">
-            {techStack.map((t, i) => (
-              <motion.div key={i} variants={fadeIn} className={`group flex items-center gap-3 p-5 border rounded-sm bg-card hover:bg-white/[0.03] transition-all ${t.level === "Learning" ? "border-primary/30" : "border-border"}`}>
-                <div className={t.color}>{t.icon}</div>
-                <div>
-                  <p className="font-semibold text-sm">{t.name}</p>
-                  <p className={`font-mono text-[10px] ${t.level === "Learning" ? "text-primary" : "text-muted-foreground"}`}>
-                    {t.level === "Learning" ? "actively learning" : "proficient"}
-                  </p>
+          {/* Skill category grid */}
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+            {skillCategories.map((cat, i) => (
+              <motion.div key={i} variants={fadeIn} className="p-6 border border-border bg-card rounded-sm hover:border-primary/20 transition-colors">
+                <div className="flex items-center gap-2 mb-4 text-primary">
+                  {cat.icon}
+                  <span className="font-mono text-xs font-bold uppercase tracking-widest">{cat.label}</span>
                 </div>
+                <div className="flex flex-wrap gap-2">
+                  {cat.skills.map((skill, j) => (
+                    <span key={j} className="font-mono text-xs px-3 py-1.5 border border-border bg-secondary/30 rounded-sm text-foreground/80 hover:border-primary/40 hover:bg-primary/5 hover:text-primary transition-colors">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Key tech icon cards */}
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 mb-10">
+            {techStack.map((t, i) => (
+              <motion.div key={i} variants={fadeIn} className={`group flex flex-col items-center gap-2 p-4 border rounded-sm bg-card hover:bg-white/[0.03] transition-all text-center ${t.level === "Learning" ? "border-primary/25" : "border-border"}`}>
+                <div className={t.color}>{t.icon}</div>
+                <p className="font-semibold text-xs leading-tight">{t.name}</p>
+                {t.level === "Learning" && (
+                  <span className="font-mono text-[9px] text-primary leading-none">learning</span>
+                )}
               </motion.div>
             ))}
           </motion.div>
@@ -316,7 +377,7 @@ export default function Home() {
             </div>
             <div className="h-[1px] hidden md:block flex-1 bg-primary/20" />
             <div className="flex flex-wrap gap-2">
-              {["Advanced React Patterns", "System Design", "Docker & Kubernetes", "TypeScript", "Open Source Contribution"].map((item, i) => (
+              {["System Design", "Docker & Kubernetes", "Advanced React", "Open Source Contribution", "ASP.NET"].map((item, i) => (
                 <span key={i} className="inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1.5 border border-primary/30 bg-primary/10 text-primary rounded-sm">
                   <span className="w-1 h-1 rounded-full bg-primary animate-pulse" /> {item}
                 </span>
