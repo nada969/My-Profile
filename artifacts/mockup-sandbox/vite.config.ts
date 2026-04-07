@@ -1,9 +1,23 @@
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { mockupPreviewPlugin } from "./mockupPreviewPlugin";
+
+import { defineConfig } from 'vite';
+
+export default defineConfig(({ command }) => {
+  // provide a default or only use for dev
+  const port = process.env.PORT ? Number(process.env.PORT) : 5173;
+
+  return {
+    // only apply server.port for dev (command === 'serve')
+    server: command === 'serve' ? { port } : undefined,
+    // ...other config
+  };
+});
 
 const rawPort = process.env.PORT;
 
