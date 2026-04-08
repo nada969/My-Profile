@@ -163,7 +163,7 @@ const timeline = [
   { year: "2021", event: "Led EV embedded software team → Won 1st place at EVER Egypt national EV competition", type: "win" },
   { year: "2022", event: "Software Developer Intern at Banque Misr — Angular, TypeScript, REST APIs. Built and launched an e-commerce web app.", type: "work" },
   { year: "2023", event: "Graduated B.Eng. + published research paper at MEPCON international conference", type: "edu" },
-  { year: "2023", event: "Joined Elsewedy Engineering as Electrical Tendering Engineer — SAP, Odoo, automation & infrastructure projects", type: "work" },
+  { year: "2023", event: "Joined Elsewedy Engineering as Electrical Tendering Engineer — SAP, Odoo, automation & infrastructure and export projects", type: "work" },
   { year: "2024", event: "Enrolled in ALX Africa Software Engineering Diploma — by choice, while working full-time. Python, Django, Databases, RESTful APIs, Linux.", type: "self" },
   { year: "2025", event: "Completed ALX · Building OrderX SaaS + more · Actively seeking software engineering roles", type: "now" },
 ];
@@ -172,7 +172,7 @@ const typeLines = [
   "$ whoami",
   "→ nada_yahya :: engineer + developer",
   "$ cat passion.txt",
-  "→ building software while the world sleeps.",
+  "→ building software Solutions.",
   "$ git log --oneline",
   "→ 8+ projects. 1 paper. always shipping.",
   "→ never stopped learning.",
@@ -393,7 +393,7 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeIn} className="mb-16">
             <p className="font-mono text-primary text-xs mb-3 uppercase tracking-widest">Built on my own time</p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight">Projects</h2>
-            <p className="text-muted-foreground mt-4 max-w-lg">Every one of these was built outside of work hours — because I wanted to, not because I had to.</p>
+            <p className="text-muted-foreground mt-4 max-w-lg">Every one of these was built outside of work hours as part of my practice.</p>
           </motion.div>
 
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-4">
@@ -426,40 +426,6 @@ export default function Home() {
                 </div>
               </motion.div>
             ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ── WHY I WANT TO JOIN A TEAM ────────────────────── */}
-      <section className="px-6 lg:px-16 py-24 bg-secondary/10 border-y border-border/40">
-        <div className="container mx-auto max-w-5xl">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <motion.div variants={fadeIn}>
-              <p className="font-mono text-primary text-xs mb-4 uppercase tracking-widest">What Drives Me</p>
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-8">I Want to Grow With a Team</h2>
-              <div className="space-y-5 text-muted-foreground leading-relaxed">
-                <p>I've been learning on my own for years — YouTube tutorials at midnight, side projects no one asked for, a research paper nobody paid me to write.</p>
-                <p>But <span className="text-foreground font-semibold">I know I'll grow faster surrounded by experienced developers</span> who push standards higher, do real code reviews, and have already solved the problems I'm just discovering.</p>
-                <p>I'm not looking for a job title. I'm looking for a team that cares about craft, values self-starters, and has room for someone who will outwork almost anyone.</p>
-              </div>
-            </motion.div>
-
-            <motion.div variants={stagger} className="space-y-4">
-              {[
-                { icon: <Users className="w-5 h-5" />, title: "Community-Driven", body: "I believe the best engineers learn from each other. I actively seek out feedback, discussions, and code review." },
-                { icon: <Zap className="w-5 h-5" />, title: "Fast Learner", body: "I picked up Django, Java backend, and embedded C on my own time. Give me a new tech, I'll be productive within weeks." },
-                { icon: <Lightbulb className="w-5 h-5" />, title: "Always Curious", body: "I read docs for fun. I watch conference talks on weekends. My 'Currently Exploring' list never empties." },
-                { icon: <Star className="w-5 h-5" />, title: "High Standards", body: "I published a research paper in a competitive conference. I hold my own code to the same level." },
-              ].map((item, i) => (
-                <motion.div key={i} variants={fadeIn} className="flex gap-4 p-5 border border-border bg-card rounded-sm hover:border-primary/30 transition-colors group">
-                  <div className="text-primary mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform">{item.icon}</div>
-                  <div>
-                    <h4 className="font-bold mb-1">{item.title}</h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.body}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
           </motion.div>
         </div>
       </section>
