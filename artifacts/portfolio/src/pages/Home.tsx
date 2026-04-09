@@ -103,6 +103,7 @@ const projects = [
     highlight: true,
     tag: "In Active Development",
     status: "live",
+    github: "https://github.com/Orde-X",
   },
   {
     title: "Fuel-Optimized Route API",
@@ -110,6 +111,7 @@ const projects = [
     tech: ["Python", "Django", "MySQL", "RESTful API", "JWT"],
     icon: <Zap className="w-6 h-6" />,
     highlight: false,
+    github: "https://github.com/nada969/Fuel-Optimized-Route-API-Project",
   },
   {
     title: "Data Migration Tool",
@@ -117,6 +119,7 @@ const projects = [
     tech: ["Java", "MongoDB", "PostgreSQL", "Cron", "JSON"],
     icon: <Database className="w-6 h-6" />,
     highlight: false,
+    github: "https://github.com/nada969/Data-Migration-Tool",
   },
   {
     title: "E-Commerce API — Artiqo",
@@ -125,6 +128,7 @@ const projects = [
     icon: <Globe className="w-6 h-6" />,
     highlight: true,
     tag: "Self-taught Django",
+    github: "https://github.com/nada969/Artiqo-Project",
   },
   {
     title: "Payment Application",
@@ -132,6 +136,7 @@ const projects = [
     tech: ["C Language", "Design Patterns"],
     icon: <Code2 className="w-6 h-6" />,
     highlight: false,
+    github: "https://github.com/nada969/Payment_Application",
   },
   {
     title: "On-Demand Traffic Light System",
@@ -139,6 +144,7 @@ const projects = [
     tech: ["C", "Embedded", "ATmega32", "Proteus"],
     icon: <Cpu className="w-6 h-6" />,
     highlight: false,
+    github: "https://github.com/nada969/On-demand-Traffic-light-control",
   },
   {
     title: "EV Prototype — DU Racing",
@@ -147,6 +153,7 @@ const projects = [
     icon: <Zap className="w-6 h-6" />,
     highlight: true,
     tag: "1st Place EVER Egypt 2021",
+    github: "#",
   },
   {
     title: "Published Research Paper",
@@ -154,6 +161,7 @@ const projects = [
     tech: ["Control Theory", "MATLAB", "HVDC"],
     icon: <BookOpen className="w-6 h-6" />,
     highlight: false,
+    github: "https://lnkd.in/dX5nM3by",
   },
 ];
 
@@ -395,7 +403,7 @@ export default function Home() {
             <p className="text-muted-foreground mt-4 max-w-lg">Every one of these was built outside of work hours as part of my practice.</p>
           </motion.div>
 
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-4">
+             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-4">
             {projects.map((p, i) => (
               <motion.div
                 key={i}
@@ -406,7 +414,7 @@ export default function Home() {
                   <div className={`p-3 rounded-sm flex-shrink-0 border ${p.highlight ? "border-primary/30 bg-primary/10 text-primary" : "border-border bg-secondary/30 text-muted-foreground group-hover:text-primary group-hover:border-primary/30 group-hover:bg-primary/5"} transition-colors`}>
                     {p.icon}
                   </div>
-                  <div>
+                  <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-3 flex-wrap mb-2">
                       <h3 className="text-lg font-bold group-hover:text-primary transition-colors">{p.title}</h3>
                       {p.tag && (
@@ -415,14 +423,26 @@ export default function Home() {
                         </span>
                       )}
                     </div>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{p.summary}</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">{p.summary}</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {p.tech.map((t, j) => (
+                        <span key={j} className="font-mono text-[10px] px-2.5 py-1 border border-border bg-secondary/30 rounded-sm text-muted-foreground">{t}</span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-wrap gap-1.5 md:justify-end md:max-w-[200px]">
-                  {p.tech.map((t, j) => (
-                    <span key={j} className="font-mono text-[10px] px-2.5 py-1 border border-border bg-secondary/30 rounded-sm text-muted-foreground">{t}</span>
-                  ))}
-                </div>
+                {p.github && (
+                  <div className="md:self-center md:pl-2 flex-shrink-0">
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 border border-border bg-secondary/20 hover:border-primary/50 hover:bg-primary/5 hover:text-primary text-muted-foreground transition-all rounded-sm font-mono text-xs whitespace-nowrap"
+                    >
+                      <SiGithub className="w-4 h-4" /> View Code
+                    </a>
+                  </div>
+                )}
               </motion.div>
             ))}
           </motion.div>
