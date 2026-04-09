@@ -194,7 +194,7 @@ export default function Home() {
           <motion.div initial="hidden" animate="visible" variants={stagger}>
             <motion.div variants={fadeIn} className="flex items-center gap-3 mb-8">
               <span className="h-[1px] w-8 bg-primary" />
-              <span className="font-mono text-xs text-primary uppercase tracking-[0.2em]">Software Engineer in Progress</span>
+              <span className="font-mono text-xs text-primary uppercase tracking-[0.2em]">Software Engineer</span>
             </motion.div>
 
             <motion.h1 variants={fadeIn} className="text-5xl md:text-7xl font-black leading-[0.92] tracking-tighter mb-6">
@@ -203,8 +203,7 @@ export default function Home() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-muted-foreground text-lg leading-relaxed mb-4 max-w-md">
-              Electrical engineer by career. Software developer by <span className="text-foreground font-semibold">obsession</span>.
-              I build things on my own time because I genuinely love it — not because I have to.
+              Software Engineer passionate about exploring new technologies and solving problems through software.
             </motion.p>
 
             <motion.p variants={fadeIn} className="text-muted-foreground/70 text-base leading-relaxed mb-10 max-w-md">
