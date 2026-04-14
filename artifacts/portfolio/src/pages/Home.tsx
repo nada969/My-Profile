@@ -232,7 +232,6 @@ export default function Home() {
               <span>DOWNLOAD CV</span>
               <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
               </a>
-            </motion.div>
           </motion.div>
 
           {/* Right — terminal + photo */}
