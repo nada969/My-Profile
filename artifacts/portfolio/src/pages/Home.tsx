@@ -226,6 +226,11 @@ export default function Home() {
               </a>
               <a href="#projects" data-testid="link-projects" className="inline-flex items-center gap-2 px-7 py-3.5 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
                 See My Work <ArrowUpRight className="w-4 h-4" />
+               <a href="https://drive.google.com/file/d/1UraFjnEFr94voOH1YQx1zcMBnShQgcFq/view?usp=sharing" target="_blank" rel="noreferrer" className="group relative inline-flex items-center gap-2 px-7 py-3.5 border border-primary/40 bg-primary/8 hover:bg-primary/15 text-primary transition-all rounded-sm font-semibold overflow-hidden">
+              <span className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent pointer-events-none" />
+              <Download className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
+              <span>View CV</span>
+              <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
               </a>
             </motion.div>
           </motion.div>
