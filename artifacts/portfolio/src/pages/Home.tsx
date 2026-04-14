@@ -153,7 +153,8 @@ const projects = [
     icon: <Zap className="w-6 h-6" />,
     highlight: true,
     tag: "1st Place EVER Egypt 2021",
-    github: "#",
+    github: "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fwww%2Emasrawy%2Ecom%2Fnews%2Fnews_regions%2Fdetails%2F2022%2F4%2F1%2F2201016%2F%25D8%25A8%25D8%25A7%25D9%2584%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2581%25D9%2588%25D8%25B2-%25D8%25AC%25D8%25A7%25D9%2585%25D8%25B9%25D8%25A9-%25D8%25AF%25D9%2585%25D9%258A%25D8%25A7%25D8%25B7-%25D9%2588%25D8%25A7%25D9%2584%25D9%2585%25D8%25B9%25D9%2587%25D8%25AF-%25D8%25A7%25D9%2584%25D8%25B9%25D8%25A7%25D9%2584%25D9%258A-%25D8%25A8%25D8%25A7%25D9%2584%25D8%25B9%25D8%25A7%25D8%25B4%25D8%25B1-%25D9%2585%25D9%2586-%25D8%25B1%25D9%2585%25D8%25B6%25D8%25A7%25D9%2586-%25D8%25A8%25D8%25B1%25D8%25A7%25D9%2584%25D9%258A-%25D8%25A7%25D9%2584%25D8%25B3%25D9%258A%25D8%25A7%25D8%25B1%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D9%2583%25D9%2587%25D8%25B1%25D8%25A8%25D8%25A7%25D8%25A6%25D9%258A%25D8%25A9-%25D9%2581%25D9%258A-%25D8%25B4%25D8%25B1%25D9%2585-%25D8%25A7%25D9%2584%25D8%25B4%25D9%258A%25D8%25AE&urlhash=vQWo&isSdui=true",
+    linkLabel: "View Post",
   },
   {
     title: "Published Research Paper",
@@ -162,6 +163,7 @@ const projects = [
     icon: <BookOpen className="w-6 h-6" />,
     highlight: false,
     github: "https://lnkd.in/dX5nM3by",
+    linkLabel: "View Paper",
   },
 ];
 
@@ -440,6 +442,7 @@ export default function Home() {
                       className="inline-flex items-center gap-2 px-4 py-2.5 border border-border bg-secondary/20 hover:border-primary/50 hover:bg-primary/5 hover:text-primary text-muted-foreground transition-all rounded-sm font-mono text-xs whitespace-nowrap"
                     >
                       <SiGithub className="w-4 h-4" /> View Code
+                      <SiGithub className="w-4 h-4" /> {p.linkLabel ?? "View Code"}
                     </a>
                   </div>
                 )}
