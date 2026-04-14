@@ -441,7 +441,7 @@ export default function Home() {
                       rel="noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2.5 border border-border bg-secondary/20 hover:border-primary/50 hover:bg-primary/5 hover:text-primary text-muted-foreground transition-all rounded-sm font-mono text-xs whitespace-nowrap"
                     >
-                      <SiGithub className="w-4 h-4" /> View Code
+                      {/* <SiGithub className="w-4 h-4" /> View Code */}
                       <SiGithub className="w-4 h-4" /> {p.linkLabel ?? "View Code"}
                     </a>
                   </div>
