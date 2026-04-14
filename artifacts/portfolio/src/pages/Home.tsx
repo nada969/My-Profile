@@ -229,7 +229,7 @@ export default function Home() {
                <a href="https://drive.google.com/file/d/1UraFjnEFr94voOH1YQx1zcMBnShQgcFq/view?usp=sharing" target="_blank" rel="noreferrer" className="group relative inline-flex items-center gap-2 px-7 py-3.5 border border-primary/40 bg-primary/8 hover:bg-primary/15 text-primary transition-all rounded-sm font-semibold overflow-hidden">
               <span className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent pointer-events-none" />
               <Download className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
-              <span>View CV</span>
+              <span>DOWNLOAD CV</span>
               <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
               </a>
             </motion.div>
@@ -486,6 +486,27 @@ export default function Home() {
               <a href="https://github.com/nada969" target="_blank" rel="noreferrer" data-testid="link-github"
                 className="inline-flex items-center gap-2 px-8 py-4 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
                 <SiGithub className="w-5 h-5" /> GitHub <ArrowUpRight className="w-4 h-4" />
+              </a>
+              <a href="https://drive.google.com/file/d/1UraFjnEFr94voOH1YQx1zcMBnShQgcFq/view?usp=sharing" target="_blank" rel="noreferrer"
+                className="group relative inline-flex items-center gap-2 px-8 py-4 border border-primary/40 bg-primary/8 hover:bg-primary/15 text-primary transition-all rounded-sm font-semibold overflow-hidden">
+                <span className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent pointer-events-none" />
+                <Download className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" />
+                <span>View CV</span>
+                <ArrowUpRight className="w-4 h-4 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              </a>
+            </motion.div>
+            {/* CV highlight card */}
+            <motion.div variants={fadeIn} className="mb-12">
+              <a href="https://drive.google.com/file/d/1UraFjnEFr94voOH1YQx1zcMBnShQgcFq/view?usp=sharing" target="_blank" rel="noreferrer"
+                className="group inline-flex items-center gap-5 px-7 py-5 border border-primary/20 bg-primary/5 hover:border-primary/40 hover:bg-primary/10 transition-all rounded-sm max-w-sm mx-auto">
+                <div className="p-3 border border-primary/30 bg-primary/10 rounded-sm text-primary flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Download className="w-5 h-5" />
+                </div>
+                <div className="text-left">
+                  <p className="font-bold text-sm text-foreground">Nada Yahya Mousa — CV</p>
+                  <p className="font-mono text-xs text-muted-foreground mt-0.5">Software Engineer · Cairo, Egypt</p>
+                </div>
+                <ArrowUpRight className="w-4 h-4 text-primary/50 group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all ml-auto flex-shrink-0" />
               </a>
             </motion.div>
 
