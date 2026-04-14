@@ -313,7 +313,7 @@ export default function Home() {
                     className={`relative flex items-start gap-4 md:gap-0 ${isRight ? "md:flex-row" : "md:flex-row-reverse"}`}
                   >
                     {/* dot */}
-                    <div className="absolute left-0 md:left-1/2 top-4 w-6 h-6 -translate-x-[10px] md:-translate-x-3 flex-shrink-0 z-10">
+                    <div className="absolute left-[11px] md:left-1/2 top-5 w-5 h-5 -translate-x-1/2 flex-shrink-0 z-10">
                       <div className={`w-full h-full rounded-full border-2 ${colors[item.type]} bg-background`} />
                     </div>
 
@@ -432,7 +432,7 @@ export default function Home() {
                   </div>
                 </div>
                 {p.github && (
-                  <div className="md:self-center md:pl-2 flex-shrink-0">
+                  <div className="self-start md:self-center pl-0 md:pl-2 flex-shrink-0">
                     <a
                       href={p.github}
                       target="_blank"
