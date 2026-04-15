@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { SiGithub, SiDjango, SiPostgresql, SiMongodb, SiLinux, SiReact, SiPython, SiCplusplus } from "react-icons/si";
 import {
   Mail, MapPin, ChevronRight, ArrowUpRight, Award, BookOpen,
-  Code2, Zap, Globe, Users, Lightbulb, Star, Coffee, Cpu, Database
+  Code2, Zap, Globe, Users, Lightbulb, Star, Coffee, Cpu, Database, Download
 } from "lucide-react";
 import profileImg from "@/assets/images/profile.png";
 import heroBg from "@/assets/images/hero-bg.png";
@@ -153,7 +153,7 @@ const projects = [
     icon: <Zap className="w-6 h-6" />,
     highlight: true,
     tag: "1st Place EVER Egypt 2021",
-    github: "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fwww%2Emasrawy%2Ecom%2Fnews%2Fnews_regions%2Fdetails%2F2022%2F4%2F1%2F2201016%2F%25D8%25A8%25D8%25A7%25D9%2584%25D8%25B5%25D9%2588%25D8%25B1-%25D9%2581%25D9%2588%25D8%25B2-%25D8%25AC%25D8%25A7%25D9%2585%25D8%25B9%25D8%25A9-%25D8%25AF%25D9%2585%25D9%258A%25D8%25A7%25D8%25B7-%25D9%2588%25D8%25A7%25D9%2584%25D9%2585%25D8%25B9%25D9%2587%25D8%25AF-%25D8%25A7%25D9%2584%25D8%25B9%25D8%25A7%25D9%2584%25D9%258A-%25D8%25A8%25D8%25A7%25D9%2584%25D8%25B9%25D8%25A7%25D8%25B4%25D8%25B1-%25D9%2585%25D9%2586-%25D8%25B1%25D9%2585%25D8%25B6%25D8%25A7%25D9%2586-%25D8%25A8%25D8%25B1%25D8%25A7%25D9%2584%25D9%258A-%25D8%25A7%25D9%2584%25D8%25B3%25D9%258A%25D8%25A7%25D8%25B1%25D8%25A7%25D8%25AA-%25D8%25A7%25D9%2584%25D9%2583%25D9%2587%25D8%25B1%25D8%25A8%25D8%25A7%25D8%25A6%25D9%258A%25D8%25A9-%25D9%2581%25D9%258A-%25D8%25B4%25D8%25B1%25D9%2585-%25D8%25A7%25D9%2584%25D8%25B4%25D9%258A%25D8%25AE&urlhash=vQWo&isSdui=true",
+    github: "https://www.masrawy.com/news/news_regions/details/2022/4/1/2201016",
     linkLabel: "View Post",
   },
   {
@@ -173,7 +173,7 @@ const timeline = [
   { year: "2021", event: "Led EV embedded software team → Won 1st place at EVER Egypt national EV competition", type: "win" },
   { year: "2022", event: "Software Developer Intern at Banque Misr — Angular, TypeScript, REST APIs. Built and launched an e-commerce web app.", type: "work" },
   { year: "2023", event: "Graduated B.Eng. + published research paper at MEPCON international conference", type: "edu" },
-  { year: "2023", event: "Joined Elsewedy Engineering as Electrical Tendering Engineer — SAP, Odoo, automation & infrastructure and export projects", type: "work" },
+  { year: "2023", event: "Joined Elsewedy Engineering as Electrical Tendering Engineer — SAP, Odoo, automation & infrastructure projects", type: "work" },
   { year: "2024", event: "Enrolled in ALX Africa Software Engineering Diploma — by choice, while working full-time. Python, Django, Databases, RESTful APIs, Linux.", type: "self" },
   { year: "2025", event: "Completed ALX · Building OrderX SaaS + more · Actively seeking software engineering roles", type: "now" },
 ];
@@ -182,7 +182,7 @@ const typeLines = [
   "$ whoami",
   "→ nada_yahya :: engineer + developer",
   "$ cat passion.txt",
-  "→ building software Solutions.",
+  "→ building software while the world sleeps.",
   "$ git log --oneline",
   "→ 8+ projects. 1 paper. always shipping.",
   "→ never stopped learning.",
@@ -213,35 +213,27 @@ export default function Home() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-muted-foreground text-lg leading-relaxed mb-4 max-w-md">
-              Software Engineer passionate about exploring new technologies and solving problems through software.
+              Software Engineer passionate about exploring new technologies and solve real-world problems through software.
             </motion.p>
 
             <motion.p variants={fadeIn} className="text-muted-foreground/70 text-base leading-relaxed mb-10 max-w-md">
               Self-taught across stacks. Published researcher. Always looking for the next hard problem and the right team to solve it with.
             </motion.p>
-          </motion.div>
+
             <motion.div variants={fadeIn} className="flex flex-wrap gap-4">
-              <a href="#contact" className="group inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-background font-bold hover:bg-primary/90 transition-all rounded-sm">
-                Let's Build Together
-                <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <a href="#contact" data-testid="link-contact" className="group inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-background font-bold hover:bg-primary/90 transition-all rounded-sm">
+                Let's Build Together <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
-            
-              <a href="#projects" className="inline-flex items-center gap-2 px-7 py-3.5 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
-                See My Work
-                <ArrowUpRight className="w-4 h-4" />
+              <a href="#projects" data-testid="link-projects" className="inline-flex items-center gap-2 px-7 py-3.5 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
+                See My Work <ArrowUpRight className="w-4 h-4" />
               </a>
-            
-              <a
-                href="https://drive.google.com/file/d/1UraFjnEFr94voOH1YQx1zcMBnShQgcFq/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-                className="group relative inline-flex items-center gap-2 px-7 py-3.5 border border-primary/40 bg-primary/8 hover:bg-primary/15 text-primary transition-all rounded-sm font-semibold overflow-hidden"
-              >
+              <a href="https://drive.google.com/file/d/1UraFjnEFr94voOH1YQx1zcMBnShQgcFq/view?usp=sharing" target="_blank" rel="noreferrer" className="group relative inline-flex items-center gap-2 px-7 py-3.5 border border-primary/40 bg-primary/8 hover:bg-primary/15 text-primary transition-all rounded-sm font-semibold overflow-hidden">
                 <span className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent pointer-events-none" />
                 <Download className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
-                <span>DOWNLOAD CV</span>
+                <span>View CV</span>
                 <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
               </a>
+            </motion.div>
           </motion.div>
 
           {/* Right — terminal + photo */}
@@ -328,7 +320,7 @@ export default function Home() {
                     variants={fadeIn}
                     className={`relative flex items-start gap-4 md:gap-0 ${isRight ? "md:flex-row" : "md:flex-row-reverse"}`}
                   >
-                    {/* dot */}
+                    {/* dot — centered on the line at both breakpoints */}
                     <div className="absolute left-[11px] md:left-1/2 top-5 w-5 h-5 -translate-x-1/2 flex-shrink-0 z-10">
                       <div className={`w-full h-full rounded-full border-2 ${colors[item.type]} bg-background`} />
                     </div>
@@ -416,10 +408,10 @@ export default function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeIn} className="mb-16">
             <p className="font-mono text-primary text-xs mb-3 uppercase tracking-widest">Built on my own time</p>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight">Projects</h2>
-            <p className="text-muted-foreground mt-4 max-w-lg">Every one of these was built outside of work hours as part of my practice.</p>
+            <p className="text-muted-foreground mt-4 max-w-lg">Every one of these was built outside of work hours — because I wanted to, not because I had to.</p>
           </motion.div>
 
-             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-4">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-4">
             {projects.map((p, i) => (
               <motion.div
                 key={i}
@@ -455,13 +447,46 @@ export default function Home() {
                       rel="noreferrer"
                       className="inline-flex items-center gap-2 px-4 py-2.5 border border-border bg-secondary/20 hover:border-primary/50 hover:bg-primary/5 hover:text-primary text-muted-foreground transition-all rounded-sm font-mono text-xs whitespace-nowrap"
                     >
-                      {/* <SiGithub className="w-4 h-4" /> View Code */}
                       <SiGithub className="w-4 h-4" /> {p.linkLabel ?? "View Code"}
                     </a>
                   </div>
                 )}
               </motion.div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── WHY I WANT TO JOIN A TEAM ────────────────────── */}
+      <section className="px-6 lg:px-16 py-24 bg-secondary/10 border-y border-border/40">
+        <div className="container mx-auto max-w-5xl">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <motion.div variants={fadeIn}>
+              <p className="font-mono text-primary text-xs mb-4 uppercase tracking-widest">What Drives Me</p>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-8">I Want to Grow With a Team</h2>
+              <div className="space-y-5 text-muted-foreground leading-relaxed">
+                <p>I've been learning on my own for years — YouTube tutorials at midnight, side projects no one asked for, a research paper nobody paid me to write.</p>
+                <p>But <span className="text-foreground font-semibold">I know I'll grow faster surrounded by experienced developers</span> who push standards higher, do real code reviews, and have already solved the problems I'm just discovering.</p>
+                <p>I'm not looking for a job title. I'm looking for a team that cares about craft, values self-starters, and has room for someone who will outwork almost anyone.</p>
+              </div>
+            </motion.div>
+
+            <motion.div variants={stagger} className="space-y-4">
+              {[
+                { icon: <Users className="w-5 h-5" />, title: "Community-Driven", body: "I believe the best engineers learn from each other. I actively seek out feedback, discussions, and code review." },
+                { icon: <Zap className="w-5 h-5" />, title: "Fast Learner", body: "I picked up Django, Java backend, and embedded C on my own time. Give me a new tech, I'll be productive within weeks." },
+                { icon: <Lightbulb className="w-5 h-5" />, title: "Always Curious", body: "I read docs for fun. I watch conference talks on weekends. My 'Currently Exploring' list never empties." },
+                { icon: <Star className="w-5 h-5" />, title: "High Standards", body: "I published a research paper in a competitive conference. I hold my own code to the same level." },
+              ].map((item, i) => (
+                <motion.div key={i} variants={fadeIn} className="flex gap-4 p-5 border border-border bg-card rounded-sm hover:border-primary/30 transition-colors group">
+                  <div className="text-primary mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform">{item.icon}</div>
+                  <div>
+                    <h4 className="font-bold mb-1">{item.title}</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{item.body}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -492,7 +517,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 px-8 py-4 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
                 LinkedIn <ArrowUpRight className="w-4 h-4" />
               </a>
-              <a href="https://github.com/nada969" target="_blank" rel="noreferrer" data-testid="link-github"
+              <a href="#" target="_blank" rel="noreferrer" data-testid="link-github"
                 className="inline-flex items-center gap-2 px-8 py-4 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
                 <SiGithub className="w-5 h-5" /> GitHub <ArrowUpRight className="w-4 h-4" />
               </a>
@@ -504,20 +529,8 @@ export default function Home() {
                 <ArrowUpRight className="w-4 h-4 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
               </a>
             </motion.div>
-            {/* CV highlight card */}
-            <motion.div variants={fadeIn} className="mb-12">
-              <a href="https://drive.google.com/file/d/1UraFjnEFr94voOH1YQx1zcMBnShQgcFq/view?usp=sharing" target="_blank" rel="noreferrer"
-                className="group inline-flex items-center gap-5 px-7 py-5 border border-primary/20 bg-primary/5 hover:border-primary/40 hover:bg-primary/10 transition-all rounded-sm max-w-sm mx-auto">
-                <div className="p-3 border border-primary/30 bg-primary/10 rounded-sm text-primary flex-shrink-0 group-hover:scale-110 transition-transform">
-                  <Download className="w-5 h-5" />
-                </div>
-                <div className="text-left">
-                  <p className="font-bold text-sm text-foreground">Nada Yahya Mousa — CV</p>
-                  <p className="font-mono text-xs text-muted-foreground mt-0.5">Software Engineer · Cairo, Egypt</p>
-                </div>
-                <ArrowUpRight className="w-4 h-4 text-primary/50 group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all ml-auto flex-shrink-0" />
-              </a>
-            </motion.div>
+
+           
 
             <motion.div variants={fadeIn} className="flex items-center justify-center gap-2 text-muted-foreground/40 font-mono text-xs">
               <MapPin className="w-3 h-3" /> Cairo, Egypt — open to remote & relocation
@@ -535,4 +548,4 @@ export default function Home() {
       </footer>
     </div>
   );
-      }
+}
