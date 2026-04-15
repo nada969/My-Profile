@@ -262,7 +262,6 @@ export default function Home() {
               </div>
             </div>
           </motion.div>
-        </div>
       </section>
 
       {/* ── STATS ────────────────────────────────────────── */}
@@ -505,6 +504,6 @@ export default function Home() {
           <p>Built outside work hours, because that's who I am.</p>
         </div>
       </footer>
-    </div>
+</div>
   );
-}
+        }
