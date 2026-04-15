@@ -219,7 +219,7 @@ export default function Home() {
             <motion.p variants={fadeIn} className="text-muted-foreground/70 text-base leading-relaxed mb-10 max-w-md">
               Self-taught across stacks. Published researcher. Always looking for the next hard problem and the right team to solve it with.
             </motion.p>
-
+          </motion.div>
             <motion.div variants={fadeIn} className="flex flex-wrap gap-4">
               <a href="#contact" className="group inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-background font-bold hover:bg-primary/90 transition-all rounded-sm">
                 Let's Build Together
@@ -534,4 +534,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )};
+  );
+      }
