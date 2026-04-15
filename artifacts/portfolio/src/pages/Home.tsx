@@ -227,12 +227,7 @@ export default function Home() {
               <a href="#projects" data-testid="link-projects" className="inline-flex items-center gap-2 px-7 py-3.5 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
                 See My Work <ArrowUpRight className="w-4 h-4" />
               </a>
-              <a href="https://drive.google.com/file/d/1UraFjnEFr94voOH1YQx1zcMBnShQgcFq/view?usp=sharing" target="_blank" rel="noreferrer" className="group relative inline-flex items-center gap-2 px-7 py-3.5 border border-primary/40 bg-primary/8 hover:bg-primary/15 text-primary transition-all rounded-sm font-semibold overflow-hidden">
-                <span className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent pointer-events-none" />
-                <Download className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
-                <span>View CV</span>
-                <ArrowUpRight className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-              </a>
+             
             </motion.div>
           </motion.div>
 
@@ -457,39 +452,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── WHY I WANT TO JOIN A TEAM ────────────────────── */}
-      <section className="px-6 lg:px-16 py-24 bg-secondary/10 border-y border-border/40">
-        <div className="container mx-auto max-w-5xl">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={stagger} className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <motion.div variants={fadeIn}>
-              <p className="font-mono text-primary text-xs mb-4 uppercase tracking-widest">What Drives Me</p>
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-8">I Want to Grow With a Team</h2>
-              <div className="space-y-5 text-muted-foreground leading-relaxed">
-                <p>I've been learning on my own for years — YouTube tutorials at midnight, side projects no one asked for, a research paper nobody paid me to write.</p>
-                <p>But <span className="text-foreground font-semibold">I know I'll grow faster surrounded by experienced developers</span> who push standards higher, do real code reviews, and have already solved the problems I'm just discovering.</p>
-                <p>I'm not looking for a job title. I'm looking for a team that cares about craft, values self-starters, and has room for someone who will outwork almost anyone.</p>
-              </div>
-            </motion.div>
-
-            <motion.div variants={stagger} className="space-y-4">
-              {[
-                { icon: <Users className="w-5 h-5" />, title: "Community-Driven", body: "I believe the best engineers learn from each other. I actively seek out feedback, discussions, and code review." },
-                { icon: <Zap className="w-5 h-5" />, title: "Fast Learner", body: "I picked up Django, Java backend, and embedded C on my own time. Give me a new tech, I'll be productive within weeks." },
-                { icon: <Lightbulb className="w-5 h-5" />, title: "Always Curious", body: "I read docs for fun. I watch conference talks on weekends. My 'Currently Exploring' list never empties." },
-                { icon: <Star className="w-5 h-5" />, title: "High Standards", body: "I published a research paper in a competitive conference. I hold my own code to the same level." },
-              ].map((item, i) => (
-                <motion.div key={i} variants={fadeIn} className="flex gap-4 p-5 border border-border bg-card rounded-sm hover:border-primary/30 transition-colors group">
-                  <div className="text-primary mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform">{item.icon}</div>
-                  <div>
-                    <h4 className="font-bold mb-1">{item.title}</h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{item.body}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
 
       {/* ── CONTACT ──────────────────────────────────────── */}
       <section id="contact" className="px-6 lg:px-16 py-32 relative overflow-hidden">
