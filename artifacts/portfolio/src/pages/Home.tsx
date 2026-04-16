@@ -97,7 +97,6 @@ const techStack = [
 const projects = [
   {
     title: "Art Marketplace",
-    // summary: "Currently building the backend for a dual-sided SaaS platform — an e-commerce storefront builder for vendors AND a B2B wholesale marketplace. Also contributing to frontend and marketing features.",
     summary:"Currently building the backend for a dual-sided SaaS platform — online marketplace where local artists can showcase and sell their drawings. This platform will connect artists with buyers.",
     tech: ["ASP.NET Core", "PostgreSQL", "JSON" , "JWT"],
     icon: <Globe className="w-6 h-6" />,
