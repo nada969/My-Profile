@@ -97,13 +97,13 @@ const techStack = [
 const projects = [
   {
     title: "Art Marketplace",
-    summary:"Currently building the backend for a dual-sided SaaS platform — online marketplace where local artists can showcase and sell their drawings. This platform will connect artists with buyers.",
+    summary: "Currently building the backend for a dual-sided SaaS platform — online marketplace where local artists can showcase and sell their drawings. This platform will connect artists with buyers.",
     tech: ["ASP.NET Core", "PostgreSQL", "JSON" , "JWT"],
     icon: <Globe className="w-6 h-6" />,
     highlight: true,
     tag: "In Active Development",
     status: "live",
-    github: https://github.com/nada969/ArtMarket-B2B-API-Pro",
+    github: "https://github.com/nada969/ArtMarket-B2B-API-Pro",
   },
   {
     title: "Fuel-Optimized Route API",
@@ -121,15 +121,15 @@ const projects = [
     highlight: false,
     github: "https://github.com/nada969/Data-Migration-Tool",
   },
-  // {
-  //   title: "E-Commerce API — Artiqo",
-  //   summary: "Designed and built a full RESTful backend with JWT auth, product CRUD, cart, and order processing — focused on backend efficiency and data security.",
-  //   tech: ["Python", "Django", "MySQL", "JWT"],
-  //   icon: <Globe className="w-6 h-6" />,
-  //   highlight: true,
-  //   tag: "Self-taught Django",
-  //   github: "https://github.com/nada969/Artiqo-Project",
-  // },
+  {
+    title: "E-Commerce API — Artiqo",
+    summary: "Designed and built a full RESTful backend with JWT auth, product CRUD, cart, and order processing — focused on backend efficiency and data security.",
+    tech: ["Python", "Django", "MySQL", "JWT"],
+    icon: <Globe className="w-6 h-6" />,
+    highlight: true,
+    tag: "Self-taught Django",
+    github: "https://github.com/nada969/Artiqo-Project",
+  },
   {
     title: "Payment Application",
     summary: "Simulated card, ATM terminal, and server interactions — implementing SALE, REFUND, Pre-Authorization, and VOID using C and software design patterns.",
