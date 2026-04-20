@@ -232,7 +232,7 @@ export default function Home() {
           </motion.div>
 
           {/* Right — terminal + photo */}
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.7 }} className="flex flex-col gap-5">
+          {/* <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.7 }} className="flex flex-col gap-5">
             <div className="bg-[#0d0d0d] border border-border rounded-md overflow-hidden shadow-2xl">
               <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-secondary/30">
                 <div className="w-3 h-3 rounded-full bg-red-500/60" />
@@ -259,6 +259,49 @@ export default function Home() {
                 </div>
                 <span className="inline-flex items-center gap-1.5 text-xs font-mono border border-primary/30 bg-primary/10 text-primary px-2 py-1 rounded-full">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" /> Open
+                </span>
+              </div>
+            </div>
+          </motion.div> */}
+
+        {/* Right — terminal + photo */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            className="flex flex-col gap-4 sm:gap-5 w-full"
+          >
+            {/* Terminal card */}
+            <div className="bg-[#0d0d0d] border border-border rounded-md overflow-hidden shadow-2xl w-full">
+              <div className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 sm:py-3 border-b border-border bg-secondary/30">
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500/60 shrink-0" />
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500/60 shrink-0" />
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500/60 shrink-0" />
+                <span className="font-mono text-[10px] sm:text-xs text-muted-foreground ml-2 sm:ml-3 truncate max-w-[120px] sm:max-w-none">
+                  terminal — nada@portfolio
+                </span>
+              </div>
+              <div className="p-4 sm:p-6 min-h-[140px] sm:min-h-[180px]">
+                <TypewriterText lines={typeLines} />
+              </div>
+            </div>
+          
+            {/* Profile image */}
+            <div className="relative group self-center w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-full">
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/50 to-primary/10 rounded-lg blur-lg opacity-50 group-hover:opacity-80 transition-opacity duration-500" />
+              <img
+                src={profileImg}
+                alt="Nada Yahya Mousa"
+                className="relative w-full object-cover rounded-lg border border-white/10 grayscale group-hover:grayscale-0 transition-all duration-700"
+              />
+              <div className="absolute bottom-2.5 sm:bottom-3 left-2.5 sm:left-3 right-2.5 sm:right-3 bg-background/85 backdrop-blur-sm border border-border rounded-md px-3 sm:px-4 py-2 sm:py-2.5 flex items-center justify-between gap-2">
+                <div className="min-w-0">
+                  <p className="text-xs sm:text-sm font-bold truncate">Nada Yahya Mousa</p>
+                  <p className="font-mono text-[10px] sm:text-xs text-muted-foreground">Cairo, Egypt</p>
+                </div>
+                <span className="inline-flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-xs font-mono border border-primary/30 bg-primary/10 text-primary px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full shrink-0 whitespace-nowrap">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+                  Open
                 </span>
               </div>
             </div>
