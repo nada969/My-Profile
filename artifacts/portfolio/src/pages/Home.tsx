@@ -288,21 +288,20 @@ export default function Home() {
           
             {/* Profile image */}
             {/* <div className="relative group self-center w-full max-w-xs"> */}
-            <div className="relative w-full max-w-xs object-cover rounded-lg border border-white/10 grayscale group-hover:grayscale-0 transition-all duration-700">
+           <div className="relative group self-center">
               <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/50 to-primary/10 rounded-lg blur-lg opacity-50 group-hover:opacity-80 transition-opacity duration-500" />
               <img
                 src={profileImg}
                 alt="Nada Yahya Mousa"
-                className="relative w-full object-cover rounded-lg border border-white/10 grayscale group-hover:grayscale-0 transition-all duration-700"
+                className="relative w-full max-w-xs object-cover rounded-lg border border-white/10 grayscale group-hover:grayscale-0 transition-all duration-700"
               />
-              <div className="absolute bottom-2.5 sm:bottom-3 left-2.5 sm:left-3 right-2.5 sm:right-3 bg-background/85 backdrop-blur-sm border border-border rounded-md px-3 sm:px-4 py-2 sm:py-2.5 flex items-center justify-between gap-2">
-                <div className="min-w-0">
-                  <p className="text-xs sm:text-sm font-bold truncate">Nada Yahya Mousa</p>
-                  <p className="font-mono text-[10px] sm:text-xs text-muted-foreground">Cairo, Egypt</p>
+              <div className="absolute bottom-3 left-3 right-3 bg-background/85 backdrop-blur-sm border border-border rounded-md px-4 py-2.5 flex items-center justify-between">
+                <div>
+                  <p className="text-sm font-bold">Nada Yahya Mousa</p>
+                  <p className="font-mono text-xs text-muted-foreground">Cairo, Egypt</p>
                 </div>
-                <span className="inline-flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-xs font-mono border border-primary/30 bg-primary/10 text-primary px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full shrink-0 whitespace-nowrap">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-                  Open
+                <span className="inline-flex items-center gap-1.5 text-xs font-mono border border-primary/30 bg-primary/10 text-primary px-2 py-1 rounded-full">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" /> Open
                 </span>
               </div>
             </div>
