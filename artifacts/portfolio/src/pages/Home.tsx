@@ -287,7 +287,8 @@ export default function Home() {
             </div>
           
             {/* Profile image */}
-            <div className="relative group self-center w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-full">
+            {/* <div className="relative group self-center w-full max-w-xs"> */}
+            <div className="relative w-full max-w-xs object-cover rounded-lg border border-white/10 grayscale group-hover:grayscale-0 transition-all duration-700">
               <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/50 to-primary/10 rounded-lg blur-lg opacity-50 group-hover:opacity-80 transition-opacity duration-500" />
               <img
                 src={profileImg}
