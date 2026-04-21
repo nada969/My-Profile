@@ -182,9 +182,9 @@ const typeLines = [
   "$ whoami",
   "→ nada_yahya :: engineer + developer",
   "$ cat passion.txt",
-  "→ building software while the world sleeps.",
+  "→ building software solutions.",
   "$ git log --oneline",
-  "→ 8+ projects. 1 paper. always shipping.",
+  "→ 8+ projects. always shipping.",
   "→ never stopped learning.",
 ];
 
