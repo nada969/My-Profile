@@ -395,7 +395,7 @@ export default function Home() {
             </div>
             <div className="h-[1px] hidden md:block flex-1 bg-primary/20" />
             <div className="flex flex-wrap gap-2">
-              {["System Design", "Docker & Kubernetes", "Advanced React", "Open Source Contribution", "ASP.NET"].map((item, i) => (
+              {["ASP.NET", "System Design", "Docker & Kubernetes", "Cursor.AI", "Open Source Contribution"].map((item, i) => (
                 <span key={i} className="inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1.5 border border-primary/30 bg-primary/10 text-primary rounded-sm">
                   <span className="w-1 h-1 rounded-full bg-primary animate-pulse" /> {item}
                 </span>
