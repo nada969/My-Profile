@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { SiGithub, SiDjango, SiPostgresql, SiMongodb, SiLinux, SiReact, SiPython, SiCplusplus } from "react-icons/si";
+import { SiGithub, SiDjango, SiPostgresql, SiMongodb, SiLinux, SiReact, SiPython, SiC } from "react-icons/si";
 import {
   Mail, MapPin, ChevronRight, ArrowUpRight, Award, BookOpen,
   Code2, Zap, Globe, Users, Lightbulb, Star, Coffee, Cpu, Database, Download
@@ -87,7 +87,7 @@ const techStack = [
   { icon: <SiPostgresql className="w-5 h-5" />, name: "PostgreSQL", level: "Proficient", color: "text-blue-400" },
   { icon: <SiMongodb className="w-5 h-5" />, name: "MongoDB", level: "Proficient", color: "text-green-400" },
   { icon: <SiLinux className="w-5 h-5" />, name: "Linux", level: "Proficient", color: "text-yellow-300" },
-  { icon: <SiCplusplus className="w-5 h-5" />, name: "C / C#", level: "Proficient", color: "text-blue-500" },
+  { icon: <SiC className="w-5 h-5" />, name: "C / C#", level: "Proficient", color: "text-blue-500" },
   { icon: <Globe className="w-5 h-5" />, name: "TypeScript", level: "Proficient", color: "text-blue-300" },
   { icon: <Globe className="w-5 h-5" />, name: "ASP.NET", level: "Learning", color: "text-purple-400" },
   { icon: <Globe className="w-5 h-5" />, name: "Node.js", level: "Learning", color: "text-green-300" },
