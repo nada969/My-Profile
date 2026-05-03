@@ -487,7 +487,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 px-8 py-4 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
                 LinkedIn <ArrowUpRight className="w-4 h-4" />
               </a>
-              <a href="#" target="_blank" rel="noreferrer" data-testid="link-github"
+              <a href="https://github.com/nada969" target="_blank" rel="noreferrer" data-testid="link-github"
                 className="inline-flex items-center gap-2 px-8 py-4 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
                 <SiGithub className="w-5 h-5" /> GitHub <ArrowUpRight className="w-4 h-4" />
               </a>
