@@ -462,37 +462,37 @@ export default function Home() {
 
 
       {/* ── CONTACT ──────────────────────────────────────── */}
-      <section id="contact" className="px-6 lg:px-16 py-32 relative overflow-hidden">
+      <section id="contact" className="px-4 sm:px-6 lg:px-16 py-20 sm:py-24 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none select-none flex items-center justify-center">
-          <span className="text-[14rem] font-black text-white/[0.018] tracking-tighter leading-none">BUILD</span>
+          <span className="text-[5rem] sm:text-[8rem] md:text-[11rem] lg:text-[14rem] font-black text-white/[0.018] tracking-tighter leading-none">BUILD</span>
         </div>
 
         <div className="container mx-auto max-w-4xl relative text-center">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={stagger}>
             <motion.p variants={fadeIn} className="font-mono text-primary text-xs mb-4 uppercase tracking-widest">Let's Connect</motion.p>
-            <motion.h2 variants={fadeIn} className="text-5xl md:text-7xl font-black tracking-tight mb-6">
+            <motion.h2 variants={fadeIn} className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
               Let's Build<br /><span className="text-primary">Something</span>
             </motion.h2>
-            <motion.p variants={fadeIn} className="text-muted-foreground text-lg mb-4 max-w-xl mx-auto leading-relaxed">
+            <motion.p variants={fadeIn} className="text-muted-foreground text-base sm:text-lg mb-4 max-w-xl mx-auto leading-relaxed px-2">
               Whether you're hiring, collaborating on open source, or just want to talk tech — I'm always up for it.
             </motion.p>
-            <motion.p variants={fadeIn} className="text-muted-foreground/60 text-sm mb-12 font-mono">nadamousa969@gmail.com</motion.p>
+            <motion.p variants={fadeIn} className="text-muted-foreground/60 text-xs sm:text-sm mb-10 sm:mb-12 font-mono break-all sm:break-normal px-4">nadamousa969@gmail.com</motion.p>
 
-            <motion.div variants={fadeIn} className="flex flex-wrap items-center justify-center gap-4 mb-16">
+            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-16 px-2">
               <a href="mailto:nadamousa969@gmail.com" data-testid="link-email"
-                className="group inline-flex items-center gap-2 px-8 py-4 bg-primary text-background font-bold hover:bg-primary/90 transition-all rounded-sm">
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 bg-primary text-background font-bold hover:bg-primary/90 transition-all rounded-sm">
                 <Mail className="w-5 h-5" /> Say Hello <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </a>
               <a href="https://www.linkedin.com/in/nada-yahya" target="_blank" rel="noreferrer" data-testid="link-linkedin"
-                className="inline-flex items-center gap-2 px-8 py-4 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
                 LinkedIn <ArrowUpRight className="w-4 h-4" />
               </a>
               <a href="https://github.com/nada969" target="_blank" rel="noreferrer" data-testid="link-github"
-                className="inline-flex items-center gap-2 px-8 py-4 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 border border-border hover:border-primary/50 hover:bg-white/[0.03] transition-all rounded-sm font-medium">
                 <SiGithub className="w-5 h-5" /> GitHub <ArrowUpRight className="w-4 h-4" />
               </a>
               <a href="https://drive.google.com/file/d/1UraFjnEFr94voOH1YQx1zcMBnShQgcFq/view?usp=sharing" target="_blank" rel="noreferrer"
-                className="group relative inline-flex items-center gap-2 px-8 py-4 border border-primary/40 bg-primary/8 hover:bg-primary/15 text-primary transition-all rounded-sm font-semibold overflow-hidden">
+                className="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 border border-primary/40 bg-primary/8 hover:bg-primary/15 text-primary transition-all rounded-sm font-semibold overflow-hidden">
                 <span className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent pointer-events-none" />
                 <Download className="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" />
                 <span>View CV</span>
@@ -500,10 +500,8 @@ export default function Home() {
               </a>
             </motion.div>
 
-           
-
-            <motion.div variants={fadeIn} className="flex items-center justify-center gap-2 text-muted-foreground/40 font-mono text-xs">
-              <MapPin className="w-3 h-3" /> Cairo, Egypt — open to remote & relocation
+            <motion.div variants={fadeIn} className="flex items-center justify-center gap-2 text-muted-foreground/40 font-mono text-[11px] sm:text-xs text-center px-4">
+              <MapPin className="w-3 h-3 flex-shrink-0" /> Cairo, Egypt — open to remote & relocation
             </motion.div>
           </motion.div>
         </div>
