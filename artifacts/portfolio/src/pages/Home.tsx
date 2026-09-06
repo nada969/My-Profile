@@ -173,7 +173,7 @@ const timeline = [
   { year: "2021", event: "Led EV embedded software team → Won 1st place at EVER Egypt national EV competition", type: "win" },
   { year: "2022", event: "Software Developer Intern at Banque Misr — Angular, TypeScript, REST APIs. Built and launched an e-commerce web app.", type: "work" },
   { year: "2023", event: "Graduated B.Eng. + published research paper at MEPCON international conference", type: "edu" },
-  { year: "2023", event: "Joined Elsewedy Engineering as Electrical Tendering Engineer — SAP, Odoo, automation & infrastructure projects", type: "work" },
+  { year: "2023", event: "Joined Hassan Allam Construction as Procurement Engineer — SAP, Odoo, automation & infrastructure projects", type: "work" },
   { year: "2024", event: "Enrolled in ALX Africa Software Engineering Diploma — by choice, while working full-time. Python, Django, Databases, RESTful APIs, Linux.", type: "self" },
   { year: "2025", event: "Completed ALX · Building OrderX SaaS + more · Actively seeking software engineering roles", type: "now" },
 ];
